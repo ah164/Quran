@@ -1,0 +1,101 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to top, #e8f5e9, #ffffff);
+  color: #2e7d32;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #1b5e20;
+}
+
+.verse-text {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  border-right: 6px solid #81c784;
+  padding-right: 12px;
+  color: #004d40;
+}
+
+h2 {
+  color: #388e3c;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+  padding-right: 0;
+}
+
+ul li::before {
+  content: "🟢";
+  margin-left: 10px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #43a047;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #2e7d32;
+}
+
+@media (max-width: 600px) {
+  .verse-text {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+.verse-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* المسافة بين الأزرار */
+  margin-top: 30px;
+}
+
+.verse-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #00796b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.verse-button:hover {
+  background-color: #004d40;
+  transform: translateY(-2px);
+}
